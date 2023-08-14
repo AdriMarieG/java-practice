@@ -1,6 +1,7 @@
 /*
-This is a calculator, crated by AdriMarieG in Aug 2023. 
-The goal of this code is to practice java
+The goal of this calculator is to practice java.
+Author: AdriMarieG
+Date: 8-14-2023
 */
 
 public class Calculator{

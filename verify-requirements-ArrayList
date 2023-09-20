@@ -1,0 +1,31 @@
+public class DNA {
+
+  public static void main (String[] args){
+   
+    /* This program will determine whether a predetermined DNA meets protein requirements */
+
+    String dna1 = "ATGCGATACGCTTGA";
+    String dna2 = "ATGCGATACGTGA";
+    String dna3 = "ATTAATATGTACTGA";
+
+    // Defining an array
+    String[] dnaArray = {dna1, dna2, dna3};
+
+      /* The following if statement checks if:
+    1. The DNA begins with ATG,
+    2. The DNA ends in TGA,
+    3. The DNA length is divisible by 3
+
+    Meeting these requirements verifies that the DNA is indeed a protein. */
+
+    for(String dna : dnaArray){
+      if (dna.startsWith("ATG") && dna.endsWith("TGA") && dna.length() % 3 == 0){
+        System.out.println(dna + " contains a protein.");
+    } else {
+        System.out.println(dna +" does not contain a protein.");
+    }
+  } 
+
+}
+}
+
